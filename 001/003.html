@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+</head>
+<body>
+<!--<div>header
+    <div>menu</div>
+</div>
+
+<div>main
+    <h1>hello world 002.html</h1>
+    <p>hello world 002.html</p>
+</div>
+
+<div>product
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+    <div>best seller 옷</div>
+</div>
+
+<div>footer</div>-->
+<div id="root"></div>
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/babel">
+    const Header = () => {
+        return (<div>header
+            <div>menu</div>
+        </div>);
+    };
+    const Main = () => {
+        return (<div>
+                    <h1>hello world 002.html</h1>
+                    <p>hello world 002.html</p>
+               </div>);
+    };
+    const BestSeller = () => {
+        return (<div>best seller 옷</div>)
+    }
+    const seo = Array.from({length: 20}, () => 0);
+    const Footer = () => {
+        return (<div>footer</div>);
+    }
+    const BestSellerList = () => {
+        return (
+            seo.map((aa) => (bestSeller))
+        );
+    };
+
+    const body = (
+        <div>
+            <Header />
+            <Main />
+            <div>
+                product
+                < BestSellerList  />
+            </div>
+
+            <Footer />
+        </div>
+    );
+
+    // DOM에 리액트 컴포넌트 랜더링하기
+    const domContainer = document.querySelector('#root');
+    ReactDOM.render(body, domContainer);
+    console.dir(ReactDOM);
+</script>
+</body>
+</html>
