@@ -1,3 +1,4 @@
+/*
 export const data = [
     {
         "id": 1,
@@ -159,4 +160,15 @@ export const data = [
         "pubDate": "2022-02-28",
         "modDate": "2022-02-28"
     }
-]
+]*/
+
+import {createContext} from "react";
+
+async function fetchAPI() {
+    const res = await fetch('https://test.api.weniv.co.kr/mall');
+    const result = await res.json();
+    console.log(result[0]);
+    return result;
+}
+
+export const Data = createContext(fetchAPI());
