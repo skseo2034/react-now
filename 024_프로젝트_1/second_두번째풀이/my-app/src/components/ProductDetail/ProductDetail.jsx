@@ -21,9 +21,10 @@ const initialProduct = {
     modDate: ''
 }
 
-const ProductDetail = () => {
-    const navigate = useNavigate();
-    const { id } = useParams();
+const ProductDetail = (props) => {
+   // const navigate = useNavigate();
+   // const { id } = useParams();
+    const {id, closeModal} = props;
     const [product, setProduct] = useState(initialProduct);
 
     const getProduct = async () => {
@@ -43,12 +44,12 @@ const ProductDetail = () => {
     }, []);
 
     const goHome = () => {
-        navigate("/");
+      //  navigate("/");
     }
 
     return (
         <>
-            <div className="modal" style={{display:"flex"}}>
+            <div style={{display:"flex"}}>
                 <div className='product-img'>
                     <ProductImage thumbnailImg={product.thumbnailImg} productName={product.productName} />
                     <ProductName productName={product.productName} />
@@ -60,8 +61,8 @@ const ProductDetail = () => {
                 <div className='product-price'>
                     <ProductPrice price={product.price} />
                 </div>
+                <button onClick={closeModal}>닫기</button>
             </div>
-            <button onClick={goHome}>Close</button>
         </>
     );
 };
