@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Category = () => {
+const Category = (props) => {
+    const { categories } = props;
     return (
-        <div>
-            
-        </div>
+        <dl className="category">
+            <dt className="a11y-hidden">Category</dt>
+            {
+                categories.map(category => <dd>{category}</dd>)
+            }
+        </dl>
     );
 };
 
