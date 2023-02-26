@@ -6,7 +6,7 @@ const Category = (props) => {
         <dl className="category">
             <dt className="a11y-hidden">Category</dt>
             {
-                categories.map(category => <dd>{category}</dd>)
+                categories.map((category, idx) => <dd key={idx}>{category}</dd>)
             }
         </dl>
     );

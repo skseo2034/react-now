@@ -7,7 +7,7 @@ import UserContext from "./context/UserContext";
 
 function App() {
     // console.log(data);
-    const [userId, setUserId] = useState(0);
+    const [userId, setUserId] = useState(1);
     const [isLogin, setIsLogin] = useState(true);
 
     return (

@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Author = (props) => {
-    const {profileImg} = props;
+    const { profileImg, userName, created } = props;
     return (
         <dl className="author-wrap">
             <dt className="a11y-hidden">Author</dt>
-            <dd className="author"><img src={profileImg} alt=""/> Chilli</dd>
+            <dd className="author"><img src={profileImg} alt=""/> {userName}</dd>
             <dt className="a11y-hidden">Created</dt>
-            <dd className="created">2022.05.25</dd>
+            <dd className="created">{created}</dd>
         </dl>
     );
 };

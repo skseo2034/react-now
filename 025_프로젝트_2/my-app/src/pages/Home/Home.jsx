@@ -7,27 +7,11 @@ import Main from "../../components/main/Main";
 import Footer from "../../components/footer/Footer";
 
 const Home = () => {
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        axios.get("http://localhost:3001/posts")
-            .then((json) => {
-               setPosts(json.data);
-            })
-            .catch((error) => {
-                console.log(error);
-            })
-    }, []);
-
-    // console.log(posts);
-
     return (
         <>
             <Header />
             <Banner />
-            <Main
-                posts={posts}
-            />
+            <Main />
             <Footer />
             {/* posts.map(post => <h2 key={post.id}>{post.title}</h2>)*/}
         </>
