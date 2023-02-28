@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import imgProfile from '../../../assets/profile.jpg';
 import imgWriteButton from '../../../assets/icon-modify-white.svg';
 import imgLogout from '../../../assets/icon-logout.svg';
+import './login.css';
 
 const Login = () => {
     return (

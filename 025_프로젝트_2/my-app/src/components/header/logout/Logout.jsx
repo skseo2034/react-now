@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import imgLogin from '../../../assets/icon-login.svg';
 import imgRegister from '../../../assets/icon-register.svg';
+import './logout.css';
 
 const Logout = () => {
     return (

@@ -4,6 +4,8 @@ import imgLogo from '../../assets/Logo.svg';
 import UserContext from "../../context/UserContext";
 import Login from "./login/Login";
 import Logout from "./logout/Logout";
+import './header.css';
+import './button.css';
 
 const Header = () => {
     const { isLogin } = useContext(UserContext);

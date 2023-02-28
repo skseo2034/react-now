@@ -4,6 +4,7 @@ import BlogDetail from "./pages/BlogDetail/BlogDetail";
 import data from './database/data.json';
 import {useState} from "react";
 import UserContext from "./context/UserContext";
+import './app.css';
 
 function App() {
     // console.log(data);
